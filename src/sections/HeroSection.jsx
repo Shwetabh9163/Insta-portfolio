@@ -74,6 +74,17 @@ const HeroSection = () => {
                         alt={INFLUENCER_DATA.name}
                         className="w-full h-full object-cover rounded-full transform transition-transform duration-500 group-hover:scale-105"
                     />
+
+                    {/* name gradient overlay */}
+                    <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-30 text-center">
+                        <h2 className="gradient-text text-2xl md:text-4xl">{INFLUENCER_DATA.name}</h2>
+                        <div className="flex items-center justify-center gap-2 mt-2">
+                            <span className="text-[12px] text-white/60">Loved by</span>
+                            <svg className="heart" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.6 2C20.9 2 19 4.1 16 7.1C13 4.1 11.1 2 8.4 2C4.3 2 1 5.4 1 9.4C1 16.3 9.7 21.8 16 27C22.3 21.8 31 16.3 31 9.4C31 5.4 27.7 2 23.6 2Z" fill="#FF6B6B"/>
+                            </svg>
+                        </div>
+                    </div>
                 </motion.div>
 
 
