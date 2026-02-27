@@ -22,9 +22,12 @@
 
 @layer base {
     body {
-        /* warm colorful gradient background */
-        background: radial-gradient(900px 400px at 10% 20%, rgba(155,92,246,0.08), transparent 6%), radial-gradient(800px 360px at 90% 80%, rgba(255,107,107,0.06), transparent 8%), linear-gradient(180deg, #0A0A0A 0%, #060606 100%);
-        color: white;
+        /* tasteful dusk gradient with warm glow accents */
+        background: linear-gradient(180deg, #071A2F 0%, #0B1226 40%, #2B0F3A 100%),
+                    radial-gradient(600px 300px at 10% 10%, rgba(155,92,246,0.12), transparent 10%),
+                    radial-gradient(500px 260px at 85% 85%, rgba(255,154,139,0.10), transparent 12%),
+                    radial-gradient(480px 220px at 60% 35%, rgba(44,230,198,0.06), transparent 15%);
+        color: #F8F7F3;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         font-family: 'Inter', sans-serif;
@@ -92,9 +95,9 @@
     mix-blend-mode: screen;
 }
 
-.blob--pink { background: rgba(255,107,107,0.45); width: 420px; height: 420px; border-radius: 50%; top: -80px; left: -120px; }
-.blob--violet { background: rgba(155,92,246,0.45); width: 380px; height: 380px; border-radius: 50%; bottom: -100px; right: -80px; }
-.blob--teal { background: rgba(44,230,198,0.35); width: 300px; height: 300px; border-radius: 50%; top: 20%; right: -140px; }
+.blob--pink { background: rgba(255,107,107,0.32); width: 420px; height: 420px; border-radius: 50%; top: -80px; left: -120px; }
+.blob--violet { background: rgba(155,92,246,0.28); width: 380px; height: 380px; border-radius: 50%; bottom: -100px; right: -80px; }
+.blob--teal { background: rgba(44,230,198,0.20); width: 300px; height: 300px; border-radius: 50%; top: 20%; right: -140px; }
 
 /* float animation utility */
 .animate-bob { animation: float 6s ease-in-out infinite; }
