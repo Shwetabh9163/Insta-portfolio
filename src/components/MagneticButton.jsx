@@ -22,9 +22,9 @@ const MagneticButton = ({ children, className = "" }) => {
             ref={ref}
             onMouseMove={mouseMove}
             onMouseLeave={mouseLeave}
-            animate={{ x: position.x * 0.3, y: position.y * 0.3 }}
-            transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-            className={`inline-block ${className}`}
+            animate={{ x: position.x * 0.28, y: position.y * 0.28, rotate: position.x * 0.002 }}
+            transition={{ type: "spring", stiffness: 160, damping: 18, mass: 0.12 }}
+            className={`inline-block ${className} neon`}
         >
             {children}
         </motion.div>

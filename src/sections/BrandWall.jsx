@@ -6,7 +6,7 @@ const BrandWall = () => {
         <section id="brands" className="section-spacing bg-[#0A0A0A] border-y border-white/5">
             <div className="container mx-auto px-6">
                 <div className="mb-20 text-center md:text-left">
-                    <p className="text-[10px] tracking-[1em] uppercase font-black text-white/20 mb-4">Strategic_Partners</p>
+                    
                     <h2 className="text-4xl md:text-7xl font-black italic">Selected <span className="not-italic text-white/5 uppercase">Brands.</span></h2>
                 </div>
 

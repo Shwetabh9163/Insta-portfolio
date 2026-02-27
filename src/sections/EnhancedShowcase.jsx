@@ -81,7 +81,7 @@ const EnhancedShowcase = () => {
                         {/* Minimal Quote Overlay Block */}
                         <div className="p-12 border border-white/5 bg-white/[0.01] flex flex-col justify-center items-center text-center">
                             <p className="text-xl md:text-2xl font-light italic text-white/40 leading-relaxed mb-8">
-                                "Digital storytelling is the new high-fashion runway."
+                                "Join me on this journey of becoming the best versions of ourselves. ."
                             </p>
                             <div className="w-12 h-px bg-white/20" />
                         </div>

@@ -50,7 +50,7 @@ const AboutMe = () => {
                             <div className="grid grid-cols-2 gap-12 pt-12 border-t border-white/10">
                                 <div>
                                     <p className="text-[10px] font-black tracking-widest uppercase mb-4 text-white/40">Direction</p>
-                                    <p className="text-xs font-bold">LIFESTYLE / FASHION</p>
+                                    <p className="text-xs font-bold">ATHLETE</p>
                                 </div>
                                 <div>
                                     <p className="text-[10px] font-black tracking-widest uppercase mb-4 text-white/40">Location</p>

@@ -38,8 +38,12 @@ const HeroSection = () => {
             ref={containerRef}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="min-h-screen bg-[#0A0A0A] text-white relative flex flex-col justify-center items-center overflow-hidden pt-20"
+            className="min-h-screen text-white relative flex flex-col justify-center items-center overflow-hidden pt-20"
         >
+            {/* Decorative colorful blobs */}
+            <div className="blob blob--pink pointer-events-none animate-bob" />
+            <div className="blob blob--violet pointer-events-none animate-bob" style={{ animationDelay: '0.6s' }} />
+            <div className="blob blob--teal pointer-events-none animate-bob" style={{ animationDelay: '1.2s' }} />
             {/* Background Texture Detail */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
                 <div className="absolute top-1/2 left-0 w-full h-px bg-white" />
@@ -62,12 +66,13 @@ const HeroSection = () => {
             <div className="relative z-10 flex flex-col items-center">
                 <motion.div
                     style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-                    className="relative w-[280px] md:w-[400px] aspect-[3/4] group"
+                    className="relative w-[280px] md:w-[420px] aspect-square group rounded-full overflow-hidden shadow-2xl"
                 >
-                    <div className="absolute inset-0 border border-white/20 z-20 pointer-events-none" />
+                    <div className="absolute inset-0 border border-white/10 z-20 pointer-events-none rounded-full" />
                     <img
                         src={INFLUENCER_DATA.media.headshot}
-                        alt="Aditi"
+                        alt={INFLUENCER_DATA.name}
+                        className="w-full h-full object-cover rounded-full transform transition-transform duration-500 group-hover:scale-105"
                     />
                 </motion.div>
 
@@ -78,8 +83,9 @@ const HeroSection = () => {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8 }}
-                        className="text-[10px] tracking-[0.6em] font-black uppercase mb-8 text-white/40"
+                        className="text-[12px] tracking-[0.12em] font-black uppercase mb-6 text-white/70 max-w-lg mx-auto"
                     >
+                        {INFLUENCER_DATA.tagline || "Creator • Storyteller • Collaborator"}
 
                     </motion.p>
                     <MagneticButton>

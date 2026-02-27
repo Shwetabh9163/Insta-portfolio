@@ -1,7 +1,7 @@
 /**
  * USER_CONTENT - ASSET REGISTRY
  * Manage all names, bios, links, and media here.
- 
+
  */
 
 export const INFLUENCER_DATA = {
@@ -19,7 +19,7 @@ export const INFLUENCER_DATA = {
 
   socialLinks: {
     instagram: "https://www.instagram.com/aditisinghrathoree/",
-    twitter: "",
+    twitter: "https://www.instagram.com/aditisinghrathoree/",
     youtube: "https://www.youtube.com/@aditisinghrathoree",
     email: "shwetabhtripathi2006@gmail.com"
   },

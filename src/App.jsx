@@ -44,11 +44,11 @@ function App() {
                 </main>
 
                 <footer className="py-20 border-t border-white/5 text-center px-6">
-                    <p className="text-[8px] md:text-[10px] uppercase tracking-[0.5em] mb-6 text-white/20">Aditi @adix.tea &copy; </p>
+                    <p className="text-[8px] md:text-[10px] uppercase tracking-[0.5em] mb-6 text-white/20">Aditi &copy; </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10 text-[10px] md:text-sm font-black uppercase tracking-widest text-white/40">
-                        <a href="https://www.instagram.com/adix.tea/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Instagram</a>
-                        <a href="https://www.instagram.com/adix.tea/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">YouTube</a>
-                        <a href="https://www.instagram.com/adix.tea/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Twitter</a>
+                        <a href="https://www.instagram.com/aditisinghrathoree/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Instagram</a>
+                        <a href="https://www.youtube.com/@aditisinghrathoree/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">YouTube</a>
+                        <a href="https://www.twitter.com/aditisinghrathoree/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Twitter</a>
                     </div>
                 </footer>
             </div>

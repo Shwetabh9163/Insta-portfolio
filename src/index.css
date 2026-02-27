@@ -12,12 +12,21 @@
     --luxury-cream: #FDFBF7;
     --luxury-silver: #E2E2E2;
     --luxury-gold: #C5A059;
+    --accent-pink: #FF6B6B;
+    --accent-teal: #2CE6C6;
+    --accent-violet: #9B5CF6;
     --section-spacing: 12rem;
 }
 
 @layer base {
     body {
-        @apply bg-[#0A0A0A] text-white selection:bg-white selection:text-black;
+        /* subtle colorful gradient background */
+        background: radial-gradient(1200px 600px at 10% 10%, rgba(156,87,246,0.08), transparent 10%), radial-gradient(900px 400px at 90% 90%, rgba(255,107,107,0.06), transparent 12%), #0A0A0A;
+        color: white;
+        selection: selection-bg-color;
+        -webkit-font-smoothing: antialiased;
+        /* fallback */
+        text-rendering: optimizeLegibility;
         font-family: 'Inter', sans-serif;
         -webkit-font-smoothing: antialiased;
     }
@@ -38,11 +47,24 @@
 
 @layer components {
     .pill-button {
-        @apply px-10 py-4 rounded-none font-bold uppercase tracking-[0.4em] text-[10px] transition-all border border-white/20 hover:bg-white hover:text-black;
+        @apply px-8 py-3 rounded-full font-bold uppercase tracking-[0.3em] text-[12px] transition-transform shadow-lg border-0;
+        background: linear-gradient(90deg, rgba(255,107,107,0.12), rgba(155,92,246,0.12));
+        color: white;
+        backdrop-filter: blur(6px);
+    }
+
+    .pill-button:hover{
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(156,87,246,0.12), 0 6px 20px rgba(44,230,198,0.06);
+        background: linear-gradient(90deg, var(--accent-pink), var(--accent-violet));
     }
 
     .glass {
         @apply bg-white/[0.03] backdrop-blur-xl border border-white/10;
+    }
+
+    .neon {
+        box-shadow: 0 6px 30px rgba(124,255,250,0.12), 0 2px 8px rgba(155,92,246,0.06);
     }
 
     .barcode-detail {
@@ -50,6 +72,18 @@
         clip-path: polygon(0 0, 5% 0, 5% 100%, 8% 100%, 8% 0, 12% 0, 12% 100%, 15% 100%, 15% 0, 25% 0, 25% 100%, 28% 100%, 28% 0, 35% 0, 35% 100%, 40% 100%, 40% 0, 55% 0, 55% 100%, 60% 100%, 60% 0, 75% 0, 75% 100%, 80% 100%, 80% 0, 95% 0, 95% 100%, 100% 100%, 100% 0);
     }
 }
+
+/* Decorative blobs used in Hero */
+.blob {
+    position: absolute;
+    filter: blur(40px);
+    opacity: 0.6;
+    mix-blend-mode: screen;
+}
+
+.blob--pink { background: rgba(255,107,107,0.45); width: 420px; height: 420px; border-radius: 50%; top: -80px; left: -120px; }
+.blob--violet { background: rgba(155,92,246,0.45); width: 380px; height: 380px; border-radius: 50%; bottom: -100px; right: -80px; }
+.blob--teal { background: rgba(44,230,198,0.35); width: 300px; height: 300px; border-radius: 50%; top: 20%; right: -140px; }
 
 .font-serif {
     font-family: 'Poppins', sans-serif;
